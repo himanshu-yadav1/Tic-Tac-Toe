@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.container{
+  display: flex;
+  margin-top: 40px;
+}
+
+.left{
+  width: 60vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-top{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.score-area{
+  font-size: large;
+  line-height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.right-bottom button{
+  font-size: x-large;
+  font-family: lato;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.right-bottom button:hover{
+  background-color: rgb(231, 230, 230);
+}
+
+.right-bottom button:active{
+  background-color: rgb(211, 210, 210);
+}
+
+
+
+
+.board{
+  width: 500px;
+  height: 500px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+
+.square{
+  border: 1px solid black;
+  flex: 33%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square:active{
+  background-color: rgb(227, 226, 226);
+}
